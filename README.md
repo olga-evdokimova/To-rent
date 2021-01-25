@@ -1,2 +1,2 @@
-Адаптивная верстка под все устройства. JQuery слайдер.
+Лендинг дома и квартиры
 https://olga-evdokimova.github.io/to2rent-adaptive/
