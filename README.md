@@ -1,2 +1,2 @@
 Лендинг дома и квартиры
-https://olga-evdokimova.github.io/to2rent-adaptive/
+https://olga-evdokimova.github.io/To-rent/.
