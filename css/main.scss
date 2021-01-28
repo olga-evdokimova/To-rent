@@ -45,8 +45,13 @@
     }
     // .logo__img
     &__img {
-        max-width: 100%;
+       max-width: 432px;
+       object-fit: cover;
+       overflow: hidden;
         padding: 0 20px;
+        img{
+            min-width: 100%;
+        }
         @media (max-width: 767px) {
             max-width: 250px;
         }
@@ -194,7 +199,6 @@
     &__form-input {
         width: 430px;
         height: 70px;
-        // font-family: Roboto Condensed;
         font-size: 18px;
         line-height: 24px;
         color: #888888;
@@ -220,7 +224,7 @@
     &__form-btn {
         // font-family: Roboto Condensed;
         font-size: 24px;
-        line-height: 24px;
+        line-height: 102%;
         background-color: #c4c4c4;
         color: #ffffff;
         padding: 23px 23px 23px 36px;
@@ -230,11 +234,11 @@
         }
         @media (max-width: 600px) {
             width: 100%;
-            padding: 10px 23px;
+            padding: 9px 23px;
         }
         &::before {
             content: "";
-            background-image: url(/images/content/search.svg);
+            background-image: url("../images/content/search.svg");
             background-repeat: no-repeat;
             width: 18px;
             height: 18px;
@@ -406,7 +410,7 @@
     }
     .reason__title--icon01::before {
         content: "";
-        background-image: url(/images/content/icon/icons01.png);
+        background-image: url("../images/content/icon/icons01.png");
         @media (max-width: 1200px) {
             width: 50px;
             height: 50px;
@@ -415,7 +419,7 @@
     }
     .reason__title--icon02::before {
         content: "";
-        background-image: url(/images/content/icon/icons02.png);
+        background-image: url("../images/content/icon/icons02.png");
         @media (max-width: 1200px) {
             width: 50px;
             height: 50px;
@@ -449,7 +453,7 @@
         position: relative;
         &::before {
             content: "";
-            background-image: url(/images/content/icon/arrow-black.svg);
+            background-image: url("../images/content/icon/arrow-black.svg");
             width: 30px;
             height: 30px;
             position: absolute;
@@ -488,7 +492,7 @@
         font-size: 48px;
         line-height: 48px;
         font-weight: 400;
-        color: #ffffff;
+        color: #000;
         padding: 68px 0 15px 0;
         @media (max-width: 767px) {
             font-size: 34px;
@@ -668,7 +672,7 @@
         }
         &::before {
             content: "";
-            background-image: url(/images/content/about/arrow-white.svg);
+            background-image: url("../images/content/about/arrow-white.svg");
             width: 30px;
             height: 30px;
             position: absolute;
@@ -699,7 +703,16 @@
     &__img {
         width: 300px;
         height: 127px;
+        object-fit: cover;
+        overflow: hidden;
+        
+        img {
+           
+            max-width: 100%;
+           
+        }
     }
+
     // .reviews__text
 
     &__text {

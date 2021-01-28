@@ -140,8 +140,15 @@ h6 {
 }
 
 .logo__img {
-  max-width: 100%;
+  max-width: 432px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
   padding: 0 20px;
+}
+
+.logo__img img {
+  min-width: 100%;
 }
 
 @media (max-width: 767px) {
@@ -406,7 +413,7 @@ h6 {
 
 .search__form-btn {
   font-size: 24px;
-  line-height: 24px;
+  line-height: 102%;
   background-color: #c4c4c4;
   color: #ffffff;
   padding: 23px 23px 23px 36px;
@@ -422,13 +429,13 @@ h6 {
 @media (max-width: 600px) {
   .search__form-btn {
     width: 100%;
-    padding: 10px 23px;
+    padding: 9px 23px;
   }
 }
 
 .search__form-btn::before {
   content: "";
-  background-image: url(/images/content/search.svg);
+  background-image: url("../images/content/search.svg");
   background-repeat: no-repeat;
   width: 18px;
   height: 18px;
@@ -667,7 +674,7 @@ h6 {
 
 .reason .reason__title--icon01::before {
   content: "";
-  background-image: url(/images/content/icon/icons01.png);
+  background-image: url("../images/content/icon/icons01.png");
 }
 
 @media (max-width: 1200px) {
@@ -680,7 +687,7 @@ h6 {
 
 .reason .reason__title--icon02::before {
   content: "";
-  background-image: url(/images/content/icon/icons02.png);
+  background-image: url("../images/content/icon/icons02.png");
 }
 
 @media (max-width: 1200px) {
@@ -712,7 +719,7 @@ h6 {
 
 .reason__link::before {
   content: "";
-  background-image: url(/images/content/icon/arrow-black.svg);
+  background-image: url("../images/content/icon/arrow-black.svg");
   width: 30px;
   height: 30px;
   position: absolute;
@@ -752,7 +759,7 @@ h6 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 400;
-  color: #ffffff;
+  color: #000;
   padding: 68px 0 15px 0;
 }
 
@@ -949,7 +956,7 @@ h6 {
 
 .blog__link::before {
   content: "";
-  background-image: url(/images/content/about/arrow-white.svg);
+  background-image: url("../images/content/about/arrow-white.svg");
   width: 30px;
   height: 30px;
   position: absolute;
@@ -990,6 +997,13 @@ h6 {
 .reviews__img {
   width: 300px;
   height: 127px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.reviews__img img {
+  max-width: 100%;
 }
 
 .reviews__text {
